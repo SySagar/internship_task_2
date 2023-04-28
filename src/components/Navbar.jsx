@@ -13,8 +13,7 @@ export default function Navbar() {
         backgroundColor={'#fff'}
         direction={'row'}>
 
-            <Stack 
-        backgroundColor={'#fff'} className="search-bar" sx={{ flexGrow: 1, paddingY:'10px', paddingX:'20px' }}>
+            <Stack  className="search-bar" sx={{ flexGrow: 1, paddingY:'10px', paddingX:'20px' }}>
             <TextField
             placeholder="Search..."
             InputProps={{startAdornment: (
