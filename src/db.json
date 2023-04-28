@@ -1,0 +1,26 @@
+{
+    "values":[
+
+        {
+            "title": "Carbon FootPrint",
+            "amount": "2,412,314t",
+            "percentage": "-45%"
+        },
+        {
+            "title": "Emissions by Spinning",
+            "amount": "72,3694t",
+            "percentage": "-60%"
+        },
+        {
+            "title": "Emission By Transportation",
+            "amount": "361,874t",
+            "percentage": "0.00"
+        }, 
+        {
+            "title": "Emission by Carding",
+            "amount": "241,231",
+            "percentage": "+0.6%"
+        }
+    ]
+    
+}

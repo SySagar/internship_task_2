@@ -24,6 +24,7 @@ export default function Sidebar() {
   return (
     <div>
       <Stack
+      backgroundColor={"#fff"}
         direction={"column"}
         border={1}
         sx={{ maxWidth: "232px", minHeight: "100vh", paddingX: "15px" }}

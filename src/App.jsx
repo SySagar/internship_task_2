@@ -7,7 +7,7 @@ import Board from "./components/Board";
 function App() {
   return (
     <>
-    <Stack direction={'row'}>
+    <Stack sx={{backgroundColor:'#F2F4F7'}} direction={'row'}>
 
     <Stack width={'232px'}>
       <Sidebar />

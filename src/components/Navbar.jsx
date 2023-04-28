@@ -10,9 +10,11 @@ export default function Navbar() {
   return (
     <div>
         <Stack
+        backgroundColor={'#fff'}
         direction={'row'}>
 
-            <Stack className="search-bar" sx={{ flexGrow: 1, paddingY:'10px', paddingX:'20px' }}>
+            <Stack 
+        backgroundColor={'#fff'} className="search-bar" sx={{ flexGrow: 1, paddingY:'10px', paddingX:'20px' }}>
             <TextField
             placeholder="Search..."
             InputProps={{startAdornment: (
