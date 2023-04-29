@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
 
   .body{
@@ -12,12 +11,29 @@
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.06);
   }
 
- .dot{
+ .dot1,.dot2,.dot3,.dot4{
   height: 8px;
   width: 8px;
   border-radius: 100%;
-  background: #000;
+  margin-right: 5px;
  }
+
+ .dot1{
+  background-color: #FEC102;
+ }
+
+.dot2{
+  background-color: #E2FF32;
+} 
+
+.dot3{
+  background-color: #55DBDB;
+}
+
+.dot4{
+  background-color: #57CC78;
+}
+
 
  .params{
   display: flex;

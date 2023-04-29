@@ -17,16 +17,16 @@ export default function Board() {
 
         <Stack direction={'row'} paddingX={'40px'} gap={'20px'}>
 
-        <Card className="card" sx={{flexGrow:1, height:'282px' , borderRadius:'14px', padding:'40px' , gap:'8px'}} variant="outlined">
-        <Typography color={'#5F6980'} fontFamily={'Inter'} fontWeight={'600'} variant="h6" sx={{width:'100%', minHeight:'26px'}}>Top emissions by type</Typography>
-            <Stack alignItems={'center'} width={'100%'}>
+        <Card className="card" sx={{flexGrow:1, height:'320px' , borderRadius:'14px', padding:'40px' , gap:'8px'}} variant="outlined">
+        <Typography color={'#5F6980'} fontFamily={'Inter'} fontWeight={'600'} variant="h6" sx={{width:'100%', minHeight:'26px', color:'black'}}>Carbon Footprint</Typography>
+            <Stack  alignItems={'center'}  paddingX={'40px'}>
            <BarGraph></BarGraph>
             </Stack>
         </Card >
         
 
-            <Card className="card" sx={{width:'fit-content', height:'282px' , borderRadius:'14px', padding:'40px' , gap:'8px'}} variant="outlined">
-        <Typography color={'#5F6980'} fontFamily={'Inter'} fontWeight={'600'} variant="h6" sx={{width:'100%', minHeight:'26px'}}>Top emissions by type</Typography>
+            <Card className="card"  sx={{width:'fit-content', height:'340px' , borderRadius:'14px', padding:'30px'}} variant="outlined">
+        <Typography color={'#5F6980'} fontFamily={'Inter'}  fontWeight={'600'} variant="h6" sx={{width:'100%', minHeight:'26px', marginBottom:'14px'}}>Top emissions by type</Typography>
             <Stack alignItems={'center'} width={'100%'} justifyContent={'start'}>
             <CircularGraph ></CircularGraph>
             </Stack>

@@ -9,6 +9,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import { faker } from '@faker-js/faker';
+import { Stack } from '@mui/material';
 
 ChartJS.register(
   CategoryScale,
@@ -23,7 +24,6 @@ export const options = {
   plugins: {
     title: {
       display: true,
-     
     },
   },
   responsive: true,
@@ -47,31 +47,35 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgb(255, 99, 132)',
+      data: labels.map(() => faker.datatype.number({ min: 100, max: 1000 })),
+      backgroundColor: '#FEC102',
       stack: 'Stack 0',
     },
     {
       label: 'Dataset 2',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgb(75, 192, 192)',
+      data: labels.map(() => faker.datatype.number({ min: 100, max: 1000 })),
+      backgroundColor: '#E2FF32',
       stack: 'Stack 0',
     },
     {
       label: 'Dataset 3',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgb(53, 162, 235)',
+      data: labels.map(() => faker.datatype.number({ min: 100, max: 1000 })),
+      backgroundColor: '#55DBDB',
       stack: 'Stack 0',
     },
     {
       label: 'Dataset 4',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-      backgroundColor: 'rgb(53, 162, 235)',
+      data: labels.map(() => faker.datatype.number({ min: 100, max: 1000 })),
+      backgroundColor: '#57CC78',
       stack: 'Stack 0',
     }
   ],
 };
 
 export function BarGraph() {
-  return <Bar options={options} data={data} />;
+  return (
+  <Stack  height={'320px'} width={'100%'} justifyContent={'center'} alignItems={'center'}>
+  <Bar options={options} data={data} />
+  </Stack>
+  );
 }
