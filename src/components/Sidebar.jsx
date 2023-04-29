@@ -26,8 +26,9 @@ export default function Sidebar() {
       <Stack
       backgroundColor={"#fff"}
         direction={"column"}
-        border={1}
-        sx={{ maxWidth: "232px", height: "100vh", paddingX: "15px" }}
+        className="sidebar"
+        zIndex={2}
+        sx={{ minWidth: "212px", paddingX: "15px" }}
       >
         <Box paddingY={"22px"}>
           <img width={"133px"} height={"41px"} src={company} alt="company" />

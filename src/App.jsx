@@ -10,6 +10,7 @@ function App() {
     <Stack sx={{backgroundColor:'#F2F4F7'}} direction={'row'}>
 
     <Stack width={'232px'}>
+    <Stack width={'232px'}></Stack>
       <Sidebar />
     </Stack>
 
