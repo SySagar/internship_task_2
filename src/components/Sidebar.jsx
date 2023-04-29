@@ -27,7 +27,7 @@ export default function Sidebar() {
       backgroundColor={"#fff"}
         direction={"column"}
         border={1}
-        sx={{ maxWidth: "232px", minHeight: "100vh", paddingX: "15px" }}
+        sx={{ maxWidth: "232px", height: "100vh", paddingX: "15px" }}
       >
         <Box paddingY={"22px"}>
           <img width={"133px"} height={"41px"} src={company} alt="company" />
