@@ -1,9 +1,20 @@
 import React from "react";
-import { Box, Button, Menu, MenuItem, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Divider,
+  Menu,
+  MenuItem,
+  Stack,
+  Typography,
+} from "@mui/material";
 import company from "../assets/company.svg";
 import dashboard from "../assets/dashboard.svg";
 import help from "../assets/help.svg";
 import file from "../assets/file.svg";
+import LogoutIcon from "@mui/icons-material/Logout";
+import LanguageIcon from "@mui/icons-material/Language";
+import TuneIcon from "@mui/icons-material/Tune";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -24,7 +35,7 @@ export default function Sidebar() {
   return (
     <div>
       <Stack
-      backgroundColor={"#fff"}
+        backgroundColor={"#fff"}
         direction={"column"}
         className="sidebar"
         zIndex={2}
@@ -35,7 +46,7 @@ export default function Sidebar() {
         </Box>
 
         <Stack marginTop={"20px"}>
-          <Typography variant="caption" fontWeight={"600"} color={"#9D9FA1"} >
+          <Typography variant="caption" fontWeight={"600"} color={"#9D9FA1"}>
             D A S H B O A R D
           </Typography>
 
@@ -86,55 +97,69 @@ export default function Sidebar() {
             </Menu>
           </Box>
 
-          <Box marginTop={'145px'}>
-          <Typography variant="caption" fontWeight={"600"} color={"#9D9FA1"}>
-          P A G E S
-          </Typography>
+          <Box marginTop={"145px"}>
+            <Typography variant="caption" fontWeight={"600"} color={"#9D9FA1"}>
+              P A G E S
+            </Typography>
 
-          <Stack direction={'column'} paddingY={'40px'} gap={'20px'}>
-          <Button
-              sx={{
-                padding: "0px",
-                width: "100%",
-                paddingRight: "70px",
-                color: "black",
-                fontWeight:'bold',
-                fontFamily: "Inter",
-                fontSize: "12px",
-              }}
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-expanded={open ? "true" : undefined}
-              startIcon={<img src={help} alt="dashboard" />}
-            >
-              Help Center
-              <Box position={"absolute"} right={0}>
-                {arrow}
-              </Box>
-            </Button>
+            <Stack direction={"column"} paddingY={"40px"} gap={"20px"}>
+              <Button
+                sx={{
+                  padding: "0px",
+                  width: "100%",
+                  paddingRight: "70px",
+                  color: "black",
+                  fontWeight: "bold",
+                  fontFamily: "Inter",
+                  fontSize: "12px",
+                }}
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-expanded={open ? "true" : undefined}
+                startIcon={<img src={help} alt="dashboard" />}
+              >
+                Help Center
+                <Box position={"absolute"} right={0}>
+                  {arrow}
+                </Box>
+              </Button>
 
-            <Button
-              sx={{
-                padding: "0px",
-                width: "100%",
-                paddingRight: "70px",
-                
-                fontWeight:'bold',
-                color: "black",
-                fontFamily: "Inter",
-                fontSize: "12px",
-              }}
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-expanded={open ? "true" : undefined}
-              startIcon={<img src={file} alt="dashboard" />}
-            >
-              File Manager
-              <Box position={"absolute"} right={0}>
-                {arrow}
-              </Box>
-            </Button>
+              <Button
+                sx={{
+                  padding: "0px",
+                  width: "100%",
+                  paddingRight: "70px",
 
-          </Stack>
+                  fontWeight: "bold",
+                  color: "black",
+                  fontFamily: "Inter",
+                  fontSize: "12px",
+                }}
+                aria-controls={open ? "basic-menu" : undefined}
+                aria-expanded={open ? "true" : undefined}
+                startIcon={<img src={file} alt="dashboard" />}
+              >
+                File Manager
+                <Box position={"absolute"} right={0}>
+                  {arrow}
+                </Box>
+              </Button>
+            </Stack>
           </Box>
+        </Stack>
+
+        <Stack direction={"column"} position={"absolute"} bottom={0}>
+          <Divider />
+          <Stack
+            paddingY={"20px"}
+            direction={"row"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            gap={"60px"}
+          >
+            <LogoutIcon></LogoutIcon>
+            <LanguageIcon></LanguageIcon>
+            <TuneIcon></TuneIcon>
+          </Stack>
         </Stack>
       </Stack>
     </div>
